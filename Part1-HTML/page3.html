@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>Page 3</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">Home</a> |
+			<a href="page2.html">Page 2</a> |
+			<a href="page3.html">Page 3</a>
+		</header>
+		
+		<div>
+		<h3>Table</h3>
+		<table>
+			<thead>
+				<tr>
+					<th rowspan='2'>Name</th>
+					<th colspan='2'>Description</th>
+					
+				</tr>
+				<tr>
+					
+					<th>Age</th>
+					<th>Job</th>
+				</tr>
+			</thead> 
+			<tbody>
+				<tr>
+					<td>Jack</td>
+					<td>20</td>
+					<td>Student</td>
+				</tr>
+				<tr>
+					<td>Mike</td>
+					<td>23</td>
+					<td>Engineer</td>
+				</tr>
+				<tr>
+					<td>Mark</td>
+					<td>25</td>
+					<td>Teacher</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<section>
+		<hr/>
+		<h3>Form</h3>
+		<form method="POST"> <!-- action, method="POST"-->
+			<table>
+				<tr>
+					<td><label for="fname">First Name</label></td>
+					<td><input name="fname" type="text" placeholder="First Name" required/></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input name="email" type="email" placeholder="Email Address" required/></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password</label></td>
+					<td><input name="password" type="password" pattern="[0-9]{8}" placeholder="Enter Password" required/></td>
+				</tr>
+				<tr>
+					<td><label for="tel">Telephone</label></td>
+					<td><input name="tel" type="tel" placeholder="###-###-###" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/></td>
+				</tr>
+			</table>
+			
+			
+			
+			<input type="time"/><br/>
+			<input name="range" type="range" min="0" max="100" value="30" /><br/>
+			
+			<input name="file" type="file" /><br/>
+			<div>
+				<h3>Favourite Food</h3>
+				<input name="food" type="radio" value="pizza"/><label for="pizza">Pizza</label> <br/>
+				<input name="food" type="radio" value="pasta"/><label for="pasta">Pasta</label><br/>
+				<input name="food" type="radio" value="burger"/><label for="burger">Burger</label><br/>
+			</div>
+			<h2>Programming Languages</h2>
+			<label for="java">Java</label>
+			<input type="checkbox" name="java" /><br/>
+			<label for="python">Pyhton</label>
+			<input type="checkbox" name="python" /><br/>
+			<label for="dart">Dart</label>
+			<input type="checkbox" name="dart" /><br/>
+			<textarea></textarea><br/><br/>
+			<select>
+				<option value="Edge" >Edge</option>
+				<option value="Chrome" >Chrome</option>
+				<option value="Firefox" >Firefox</option>
+				<option value="Safari" >Safari</option>
+			</select>
+			<input list="browser" />
+			<datalist id="browser">
+				<option value="Edge" >Edge</option>
+				<option value="Chrome" >Chrome</option>
+				<option value="Firefox" >Firefox</option>
+				<option value="Safari" >Safari</option>
+			</datalist>
+			<br/>
+			<input type="submit" value="Login"/>
+		</form>
+		<a href="mailto:mmedhat1910@gmail.com">Email</a>
+		
+	</section>
+	</body>
+</html>
